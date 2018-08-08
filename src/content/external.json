@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "url": "https://github.com/tejabeta",
+      "title": "Github"
+    },
+    {
+      "url": "https://www.linkedin.com/in/tejasvithota",
+      "title": "Linkedin"
+    },
+    {
+      "url": "https://capsuleoftales.wordpress.com/",
+      "title": "Blog"
+    },
+    {
+      "url": "https://www.instagram.com/teja25.t",
+      "title": "Instagram"
+    }
+  ],
+  "currentOrganisation": {
+    "url": "http://www.transformingsystems.co.uk/",
+    "title": "Transforming Systems",
+    "role": "Polyglot Developer"
+  }
+}
