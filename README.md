@@ -1,7 +1,7 @@
 # [Tejabeta-2.0](https://www.tejabeta.com).
 My website, version 2.0
 
-This project using [React](https://github.com/facebookincubator/create-react-app).<br>
+This project is built using [React](https://github.com/facebookincubator/create-react-app).<br>
 
 As being a portfolio, things change regularly. I used a method to render all the content from a json file instead of hard coding at places.
 
