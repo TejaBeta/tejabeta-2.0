@@ -79,6 +79,10 @@
   ],
   "projectInfo": [
     {
+      "url": "https://github.com/TejaBeta/tejabeta-2.0",
+      "title": "My Portfolio Version 2.0"
+    },
+    {
       "url": "https://github.com/TejaBeta/Magic-touch-bar",
       "title": "Magic touch bar for Macbook Pro using Electron."
     },
