@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import externalLinks from "./content/external.json";
-import data from "./content/data.json";
-import "./App.css";
+import "./index.css";
 
 const externalLinksURL =
   "https://raw.githubusercontent.com/TejaBeta/tejabeta-2.0/master/src/content/external.json";
@@ -22,14 +20,15 @@ class App extends Component {
       end: null,
       projectInfo: [],
       techStack: null,
-      careerInfo: null
+      careerInfo: null,
+      role: null
     };
     this.handleOnClick = this.handleOnClick.bind(this);
     this.getExternalLinks = this.getExternalLinks.bind(this);
     this.getDataInfo = this.getDataInfo.bind(this);
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.getExternalLinks();
     this.getDataInfo();
   }
@@ -40,7 +39,8 @@ class App extends Component {
       .then(data =>
         this.setState({
           externalLinks: data.data,
-          currentOrganisation: data.currentOrganisation
+          currentOrganisation: data.currentOrganisation,
+          role: data.currentOrganisation.role
         })
       )
       .catch(error => console.error("Something went wrong!"));
@@ -137,10 +137,10 @@ class App extends Component {
           <h2 className="App-sub-title">Polyglot Developer in London</h2>
           {bioLinks}
           <div className="App-intro">
-            Hi, I'm Teja, working as a {externalLinks.currentOrganisation.role}{" "}
-            at {currentOrganisation} 👨‍💻.
+            Hi, I'm Teja, working as a {this.state.role} at{" "}
+            {currentOrganisation} 👨‍💻.
           </div>
-          <div className="App-intro">{data.intro}</div>
+          <div className="App-intro">{this.state.intro}</div>
           <div>
             <p
               className="bullet-heading"
@@ -174,7 +174,7 @@ class App extends Component {
             </p>
             {this.state.showStack && technologies}
           </div>
-          <div className="App-intro">{data.end}</div>
+          <div className="App-intro">{this.state.end}</div>
         </header>
       </div>
     );
