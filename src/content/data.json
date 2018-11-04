@@ -68,6 +68,10 @@
   ],
   "projectInfo": [
     {
+      "url": "https://github.com/TejaBeta/Bolt",
+      "title": "ToDo list tray application using Electron."
+    },
+    {
       "url": "https://github.com/TejaBeta/tejabeta-2.0",
       "title": "My Portfolio Version 2.0"
     },
