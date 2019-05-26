@@ -90,7 +90,18 @@
   ],
 
   "techStack": {
-    "languages": ["Python", "Javascript", "Java", "C", "Swift", "COBOL"],
+    "languages": [
+      "Python",
+      "Terraform",
+      "Ansible",
+      "Shellscript",
+      "Javascript",
+      "Typescript",
+      "Java",
+      "C",
+      "Swift",
+      "COBOL"
+    ],
     "technologies": [
       "React",
       "Angular",
