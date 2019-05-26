@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import "./index.css";
+import React, { Component } from 'react';
+import './index.css';
 
 const externalLinksURL =
-  "https://raw.githubusercontent.com/TejaBeta/tejabeta-2.0/master/src/content/external.json";
+  'https://raw.githubusercontent.com/TejaBeta/tejabeta-2.0/master/src/content/external.json';
 const dataLinkURL =
-  "https://raw.githubusercontent.com/TejaBeta/tejabeta-2.0/master/src/content/data.json";
+  'https://raw.githubusercontent.com/TejaBeta/tejabeta-2.0/master/src/content/data.json';
 
 class App extends Component {
   constructor(props) {
@@ -43,7 +43,7 @@ class App extends Component {
           role: data.currentOrganisation.role
         })
       )
-      .catch(error => console.error("Something went wrong!"));
+      .catch(error => console.error('Something went wrong!'));
   }
 
   getDataInfo() {
@@ -58,7 +58,7 @@ class App extends Component {
           careerInfo: data.careerInfo
         });
       })
-      .catch(error => console.error("Something went wrong!"));
+      .catch(error => console.error('Something went wrong!'));
   }
 
   handleOnClick(n) {
@@ -86,35 +86,35 @@ class App extends Component {
     const bioLinks =
       this.state.externalLinks &&
       this.state.externalLinks.map(e => (
-        <p className="bio-links">
-          <a href={`${e.url}`} target="_blank">{`${e.title}`}</a>
+        <p className='bio-links'>
+          <a href={`${e.url}`} target='_blank'>{`${e.title}`}</a>
         </p>
       ));
     const technologies =
       this.state.techStack &&
       this.state.techStack.languages.map(t => (
-        <li className="bullet-info">
-          <span className="bullet-highlights1">{`${t}`}</span>
+        <li className='bullet-info'>
+          <span className='bullet-highlights1'>{`${t}`}</span>
         </li>
       ));
 
     const currentOrganisation = this.state.currentOrganisation && (
       <a
-        className="current-org"
+        className='current-org'
         href={`${this.state.currentOrganisation.url}`}
-        target="_blank"
+        target='_blank'
       >{`${this.state.currentOrganisation.title}`}</a>
     );
 
     const careerInfo =
       this.state.careerInfo &&
       this.state.careerInfo.map((c, i) => (
-        <li className="bullet-info">
-          <span className="bullet-highlights1">{`${c.time}`}</span>
-          <span className="bullet-highlights2">{`${c.company}`}</span>
-          <span className="bullet-highlights3">{`${c.title}`}</span>
+        <li className='bullet-info'>
+          <span className='bullet-highlights1'>{`${c.time}`}</span>
+          <span className='bullet-highlights2'>{`${c.company}`}</span>
+          <span className='bullet-highlights3'>{`${c.title}`}</span>
           <br />
-          <span className="bullet-description" hidden="true">{`${
+          <span className='bullet-description' hidden='true'>{`${
             c.Description
           }`}</span>
         </li>
@@ -123,58 +123,58 @@ class App extends Component {
     const projectInfo =
       this.state.projectInfo &&
       this.state.projectInfo.map(p => (
-        <li className="bullet-info">
-          <span className="bullet-highlights1">
-            <a href={`${p.url}`} target="_blank">{`${p.title}`}</a>
+        <li className='bullet-info'>
+          <span className='bullet-highlights1'>
+            <a href={`${p.url}`} target='_blank'>{`${p.title}`}</a>
           </span>
         </li>
       ));
 
     return (
-      <div className="App">
-        <header className="App-body">
-          <h1 className="App-title">Tejasvi Thota (Teja)</h1>
-          <h2 className="App-sub-title">Polyglot Developer in London</h2>
+      <div className='App'>
+        <header className='App-body'>
+          <h1 className='App-title'>Tejasvi Thota (Teja)</h1>
+          <h2 className='App-sub-title'>{this.state.role} in London 🇬🇧</h2>
           {bioLinks}
-          <div className="App-intro">
-            Hi, I'm Teja, working as a {this.state.role} at{" "}
+          <div className='App-intro'>
+            Hi, I'm Teja, working as a {this.state.role} at{' '}
             {currentOrganisation} 👨‍💻.
           </div>
-          <div className="App-intro">{this.state.intro}</div>
+          <div className='App-intro'>{this.state.intro}</div>
           <div>
             <p
-              className="bullet-heading"
+              className='bullet-heading'
               onClick={() => {
                 this.handleOnClick(0);
               }}
             >
-              [{this.state.showCareer ? "-" : "+"}] Career Updates
+              [{this.state.showCareer ? '-' : '+'}] Career Updates
             </p>
             {this.state.showCareer && careerInfo}
           </div>
           <div>
             <p
-              className="bullet-heading"
+              className='bullet-heading'
               onClick={() => {
                 this.handleOnClick(1);
               }}
             >
-              [{this.state.showProjects ? "-" : "+"}] Project Updates
+              [{this.state.showProjects ? '-' : '+'}] Project Updates
             </p>
             {this.state.showProjects && projectInfo}
           </div>
           <div>
             <p
-              className="bullet-heading"
+              className='bullet-heading'
               onClick={() => {
                 this.handleOnClick(2);
               }}
             >
-              [{this.state.showStack ? "-" : "+"}] Favourite Languages
+              [{this.state.showStack ? '-' : '+'}] Favourite Languages
             </p>
             {this.state.showStack && technologies}
           </div>
-          <div className="App-intro">{this.state.end}</div>
+          <div className='App-intro'>{this.state.end}</div>
         </header>
       </div>
     );
