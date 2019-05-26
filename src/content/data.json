@@ -17,14 +17,14 @@
       "title": "Graduated (Masters)"
     },
     {
-      "time": "Nov, 2018",
+      "time": "Nov, 2017",
       "company": "University of Greenwich",
       "Type": "Job",
       "Description": "As a software developer, I helped the organisation to build a crisis management platform named Pandora+. It is the project being developed by University of Greenwich in conjunction with T4R and is based on the Pandora System developed as a result of the EU FP7 project, grant agreement 225387, funding Scheme. Project development involves TDD development process and the technologies involved in this project are Spring Boot, Angular, Docker and Google Cloud Platform. Some of the key responsibilities include.",
       "title": "Software Developer"
     },
     {
-      "time": "Jul, 2018",
+      "time": "Jul, 2017",
       "company": "University of Greenwich",
       "Type": "Job",
       "Description": "As a full-stack developer, worked on a mobile based application and its backend. This project is intended to build an application, to help people in the drought regions of countries in Africa, by fetching nearby water bodies based on the current location. Technologies involved in this project are NodeJS, MySQL, Restful API, Android application.",
@@ -67,6 +67,10 @@
     }
   ],
   "projectInfo": [
+    {
+      "url": "https://github.com/TejaBeta/SerialKiller-CLI",
+      "title": "SerialKiller is a process kill tool for Unix/Linux environment."
+    },
     {
       "url": "https://github.com/TejaBeta/Bolt",
       "title": "ToDo list tray application using Electron."
