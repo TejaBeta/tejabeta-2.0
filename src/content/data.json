@@ -3,6 +3,13 @@
   "end": "Appreciate your valuable time, if you have anything to say feel free to drop a message. I really like people who tell jokes and talk about science.",
   "careerInfo": [
     {
+      "time": "Nov, 2018",
+      "company": "Transforming Systems",
+      "Type": "Job",
+      "Description": "As a DevOps Lead, I work and build my own Kubernetes Clusters. Love manipulating and working with HAProxy. Kubernetes, Terraform, Ansible, HAProxy, Python, Go, Shell are my favorites",
+      "title": "DevOps Lead"
+    },
+    {
       "time": "Feb, 2018",
       "company": "Transforming Systems",
       "Type": "Job",
