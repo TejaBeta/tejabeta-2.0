@@ -75,6 +75,10 @@
   ],
   "projectInfo": [
     {
+      "url": "https://github.com/TejaBeta/s4",
+      "title": "A tiny Golang CLI tool to serve static websites from AWS S3 Object store with index.html as the entry file."
+    },
+    {
       "url": "https://github.com/TejaBeta/SerialKiller-CLI",
       "title": "SerialKiller is a process kill tool for Unix/Linux environment."
     },
@@ -98,26 +102,19 @@
 
   "techStack": {
     "languages": [
-      "Python",
-      "Terraform",
-      "Ansible",
+      "GoLang",
       "Shellscript",
-      "Javascript",
-      "Typescript",
-      "Java",
-      "C",
-      "Swift",
-      "COBOL"
+      "Python",
+      "TypeScript"
     ],
     "technologies": [
-      "React",
-      "Angular",
-      "Sprint Boot",
-      "NodeJS",
-      "Django",
+      "Kubernetes",
       "Docker",
-      "MySQL & Mongo",
-      "Tornedo"
+      "Terraform",
+      "Ansible",
+      "AWS",
+      "Azure",
+      "OpenStack"
     ]
   }
 }
