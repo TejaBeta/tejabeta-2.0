@@ -75,8 +75,12 @@
   ],
   "projectInfo": [
     {
+      "url": "https://github.com/TejaBeta/kopy",
+      "title": "Kopy is a kubectl plugin to copy resources from one context to another."
+    },
+    {
       "url": "https://github.com/TejaBeta/s4",
-      "title": "A tiny Golang CLI tool to serve static websites from AWS S3 Object store with index.html as the entry file."
+      "title": "S4 is a tiny Golang CLI tool to serve static websites from AWS S3 Object store with index.html as the entry file."
     },
     {
       "url": "https://github.com/TejaBeta/SerialKiller-CLI",
