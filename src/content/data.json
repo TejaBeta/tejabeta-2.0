@@ -75,6 +75,10 @@
   ],
   "projectInfo": [
     {
+      "url": "https://github.com/TejaBeta/kubectl-ttl",
+      "title": "kubectl-ttl is a kubectl plugin to add time to live option to Kubernetes resources."
+    },
+    {
       "url": "https://github.com/TejaBeta/kopy",
       "title": "Kopy is a kubectl plugin to copy resources from one context to another."
     },
