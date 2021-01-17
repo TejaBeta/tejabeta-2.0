@@ -2,6 +2,13 @@
   "intro": "People say I talk a lot 🤷‍♂️. I love programming 🖥, travelling 🚂, exploring new places 🌍, new cuisines 🍜, and music 🎶",
   "end": "Appreciate your valuable time, if you have anything to say feel free to drop a message. I really like people who tell jokes and talk about science.",
   "careerInfo": [
+     {
+      "time": "Jan, 2021",
+      "company": "eBay",
+      "Type": "Job",
+      "Description": "",
+      "title": "DevOps Engineer"
+    },
     {
       "time": "Nov, 2018",
       "company": "Transforming Systems",
